@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.32.0",
-    "generatedAt": "2026-11-27T05:34:13.057357016Z",
+    "version": "1.33.0",
+    "generatedAt": "2026-11-27T05:35:42.592383430Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "01a1e37b-3b49-7a19-8ec7-0d8efda91bea",
     "homepageId": "01a21aea-cc08-73d8-8e35-d4b75e64fa13"
@@ -1986,17 +1986,9 @@
                     "blockId": null
                   },
                   {
-                    "id": "01a21afe-0f2a-7560-a152-b64b1ca0acdf",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_essence/1795749186739-vddobpv649.jpg",
-                    "sortOrder": 1,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
                     "id": "01a21afe-0edf-7922-a1ec-1b17e877f380",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_essence/1795749186733-eetqchvaip.jpg",
-                    "sortOrder": 2,
+                    "sortOrder": 1,
                     "description": "",
                     "isSelected": true,
                     "blockId": null
@@ -2357,7 +2349,12 @@
             "woff2": null,
             "family": "Pretendard"
           },
-          "enMain": null
+          "enMain": {
+            "cdn": "https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap",
+            "key": "cormorant",
+            "woff2": null,
+            "family": "Cormorant"
+          }
         },
         "color": {
           "primary": "#FFFFFF",
