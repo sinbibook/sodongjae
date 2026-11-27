@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.19.0",
-    "generatedAt": "2026-11-27T03:51:34.708359456Z",
+    "version": "1.20.0",
+    "generatedAt": "2026-11-27T03:56:10.883731960Z",
     "templateType": "fullpage_mood",
     "propertyId": "01a1e37b-3b49-7a19-8ec7-0d8efda91bea",
     "homepageId": "01a21aea-cc08-73d8-8e35-d4b75e64fa13"
@@ -2210,7 +2210,7 @@
               },
               "about": [
                 {
-                  "title": "",
+                  "title": "Sodongjae Arest",
                   "images": [
                     {
                       "id": "01a21b10-11e0-7889-932b-79e18822c3fc",
