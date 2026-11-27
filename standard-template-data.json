@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.29.0",
-    "generatedAt": "2026-11-27T05:26:05.509217058Z",
+    "version": "1.30.0",
+    "generatedAt": "2026-11-27T05:32:52.730198990Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "01a1e37b-3b49-7a19-8ec7-0d8efda91bea",
     "homepageId": "01a21aea-cc08-73d8-8e35-d4b75e64fa13"
@@ -2010,74 +2010,42 @@
                 "title": "",
                 "images": [
                   {
-                    "id": "01a21afe-0f20-7ef7-9334-2b702c2f7e2b",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186739-iujsdluer5.jpg",
-                    "sortOrder": 0,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
                     "id": "01a21afe-0f1d-7291-a6a6-a3e979655041",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186739-2462m4gzb3.jpg",
+                    "sortOrder": 0,
+                    "description": "창문 너머 펼쳐지는 힐링",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "01a21afe-0f20-7ef7-9334-2b702c2f7e2b",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186739-iujsdluer5.jpg",
                     "sortOrder": 1,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
-                    "id": "01a21afe-0df4-789e-a2ce-c8c804337395",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186735-8houtml3as.jpg",
-                    "sortOrder": 2,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
-                    "id": "01a21afe-0f10-716a-b193-3fafd5eaa196",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186729-ftmye10ogi.jpg",
-                    "sortOrder": 3,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
-                    "id": "01a21afe-0e7a-7084-a493-e11362b69fbf",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186729-5a2xo2hdyq.jpg",
-                    "sortOrder": 4,
-                    "description": "",
+                    "description": "일상의 작은 휴식",
                     "isSelected": true,
                     "blockId": null
                   },
                   {
                     "id": "01a21afe-0f27-71ce-bb49-4b7b3ab8a85a",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186740-u92tx8gd1n.jpg",
-                    "sortOrder": 5,
-                    "description": "",
+                    "sortOrder": 2,
+                    "description": "특별한 공간 속 한끼",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "01a21b7d-fa0a-7e54-882d-538aa34cb27f",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795757569959-up4hmlrwyz.jpg",
+                    "sortOrder": 3,
+                    "description": "함께하는 추억",
                     "isSelected": true,
                     "blockId": null
                   },
                   {
                     "id": "01a21b1e-66c8-702c-92c5-4e0d6dbd2749",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795751306530-fkat77pvvg.jpg",
-                    "sortOrder": 6,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
-                    "id": "01a21afe-0f23-7452-96a6-ddd947ace353",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186730-00okfyql8y.jpg",
-                    "sortOrder": 7,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
-                    "id": "01a21afe-0f1e-774e-9919-45ed59feaeed",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_gallery/1795749186737-mu10gq6ju7.jpg",
-                    "sortOrder": 8,
-                    "description": "",
+                    "sortOrder": 4,
+                    "description": "은은하게 퍼지는 불빛",
                     "isSelected": true,
                     "blockId": null
                   }
