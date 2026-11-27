@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:,">
     <title>거제 소동재 스파 펜션</title>
+    <meta name="description" content="오션·포레스트 뷰 객실에서 월풀스파부터 테라스 바베큐·불멍, 아침을 여는 조식까지 머무는 순간이 쉼이 되는 거제 소동재 스파 펜션입니다.">
+    <meta name="keywords" content="">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/common.css" as="style">
+    <link rel="preload" href="styles/nearby-attractions.css" as="style">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/nearby-attractions.css">
+    <link rel="stylesheet" href="styles/theme.css">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./styles/theme.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/quote-section.css">
-    <link rel="stylesheet" href="./styles/directions.css">
-    <link rel="stylesheet" href="./styles/nearby-attractions.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap">
   <!-- Open Graph Meta Tags for Social Media -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="거제 소동재 스파 펜션" />
@@ -36,103 +29,91 @@
   <meta name="google-site-verification" content="75whl7G5hS4Ps0MzWyKga4TLlqMANRJ3dBc5JIWjZ6Y" />
 </head>
 <body>
-    <div class="direction nearby-attractions-page">
-        <!-- header.html include -->
-        <div id="header-container"></div>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
 
-        <main class="content">
-            <section class="con-2">
-                <div class="bg2">
-                    <!-- Hero Slider Images -->
-                    <div class="bg-slides" data-nearby-hero-images></div>
-                    <div class="bg-child">
-                        <div class="address-container-parent">
-                            <div class="address-container">
-                                <div class="direction-info">
-                                    <h2 class="direction2" data-nearby-hero-title>Nearby Attractions</h2>
-                                </div>
-                                <div class="direction-divider"></div>
-                            </div>
-                            <div class="arrow-container">
-                                <div class="arrow2">
-                                    <img class="arrow-child2 arrow-prev" role="button" tabindex="0" aria-label="이전 슬라이드" loading="lazy" alt="" src="./public/Rectangle-37.svg" />
-                                    <h3 class="h36 arrow-num-current">01</h3>
-                                    <div class="arrow-child3"></div>
-                                    <h3 class="h36 arrow-num-total">01</h3>
-                                    <img class="arrow-child4 arrow-next" role="button" tabindex="0" aria-label="다음 슬라이드" loading="lazy" alt="" src="./public/Rectangle-37.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+            <div class="hero-background">
+                <!-- Custom-field: homepage.customFields.pages.nearbyAttractions.sections[0].hero.images -->
+                <img src="" alt="주변관광지 배경" data-nearby-hero-image>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text-center">
+                    <!-- 하드코딩 fixed -->
+                    <h1 class="hero-title">주변 관광지</h1>
                 </div>
-            </section>
-        </main>
+            </div>
 
-        <!-- Content Wrapper with Background Icon -->
-        <div class="nearby-attractions-content-wrapper">
-            <img class="bg-icon" src="./public/Mask-group@2x.png" alt="" />
+            <!-- Scroll Down Indicator -->
+            <div class="hero-scroll-down" onclick="scrollToNextSection()">
+                <svg class="scroll-arrow" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+            </div>
+    </section>
 
-            <!-- Section Title & Description (from homepage.customFields.pages.nearbyAttractions.sections[0].hero) -->
-            <section class="nearby-attractions-info-section">
-                <div class="nearby-attractions-section-inner">
-                    <h2 class="nearby-attractions-section-title" data-nearby-attractions-title>NEARBY ATTRACTIONS</h2>
-                    <p class="nearby-attractions-section-desc" data-nearby-attractions-description></p>
+    <!-- Main Content Section -->
+    <main class="attractions-container">
+        <div class="attractions-intro-section">
+            <div class="attractions-intro-content">
+                <div class="attractions-label">
+                    <!-- 하드코딩 fixed -->
+                    <span class="attractions-number">NEARBY ATTRACTIONS</span>
                 </div>
-            </section>
-
-            <!-- Attractions Content -->
-            <div class="nearby-attractions-about-wrapper">
-                <div class="nearby-attractions-wrapper">
-                    <!-- Left Column: Main Image & Thumbnails (from about[].images[]) -->
-                    <section class="nearby-attractions-slider-section">
-                        <div class="nearby-attractions-feature">
-                            <img class="nearby-attractions-feature-img" data-main-image src="" alt="주변 관광지 이미지" />
-                        </div>
-
-                        <div class="nearby-attractions-thumbs" data-nearby-attractions-list></div>
-                    </section>
-
-                    <!-- Right Column: Title & Description (from about[].title & about[].description) -->
-                    <main class="nearby-attractions-frame-main">
-                        <h1 class="nearby-attractions-info-name" data-attraction-title></h1>
-                        <div class="nearby-attractions-bg-wrapper">
-                            <div class="nearby-attractions-bg4">
-                                <div class="bg-item"></div>
-                                <div class="rectangle-div"></div>
-                                <div class="nearby-attractions-description" data-attraction-description></div>
-                            </div>
-                        </div>
-                    </main>
-                </div>
+                <!-- Custom-field: homepage.customFields.pages.nearbyAttractions.sections[0].hero.title -->
+                <h2 class="attractions-title" data-nearby-attractions-about-title></h2>
+                <!-- Custom-field: homepage.customFields.pages.nearbyAttractions.sections[0].hero.description -->
+                <p class="attractions-description" data-nearby-attractions-about-description></p>
             </div>
         </div>
+        <!-- Custom-field: homepage.customFields.pages.nearbyAttractions.sections[0].about[].images, about[].title, about[].description -->
+        <div class="attractions-grid" id="attractions-grid-container">
+        </div>
+    </main>
 
-        <!-- ===================== QUOTE ===================== -->
-        <section class="quote-section" data-closing-section>
-            <img class="quote-bg" loading="lazy" alt="" src="" />
-            <div class="quote-content">
-                <b class="quote-title" data-closing-title></b>
-                <b class="quote-body" data-closing-description></b>
+    <!-- Closing Section -->
+    <section class="attractions-closing">
+        <!-- Custom-field: property.images[0].exterior[0] (first exterior image) -->
+        <div class="attractions-closing-bg" style="background-size: cover; background-position: center;" data-nearby-closing-image-bg></div>
+        <div class="attractions-closing-overlay">
+            <div class="attractions-closing-content">
+                <!-- Custom-field: property logo (ImageHelpers.extractLogoUrl) -->
+                <img src="" alt="로고" class="closing-logo" data-closing-logo="">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- footer.html include -->
-        <div id="footer-container"></div>
-    </div>
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
 
-    <!-- Scripts -->
-    <script src="./js/common.js"></script>
-    <script src="./js/common/scroll-reveal.js"></script>
-    <script src="./js/pages/nearby-attractions.js"></script>
+    <!-- Include ImageWithFallback script -->
+    <script src="js/image-with-fallback.js"></script>
 
-    <!-- Data Mapper -->
-    <script src="./js/image-helpers.js"></script>
-    <script src="./js/data-mapper/core/base-mapper.js"></script>
-    <script src="./js/data-mapper/pages/header-footer-mapper.js"></script>
-    <script src="./js/data-mapper/pages/nearby-attractions-mapper.js"></script>
-    <script src="./js/preview-handler.js"></script>
+    <!-- Common Slider Module -->
+    <script src="js/common/slider.js"></script>
 
-    <!-- Header / Footer Loader -->
-    <script src="./js/header-footer-loader.js"></script>
+    <!-- Image Helpers -->
+    <script src="js/image-helpers.js"></script>
+
+    <!-- Base Data Mapper -->
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+
+    <!-- Header Footer Mapper -->
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+
+    <!-- Nearby Attractions Mapper -->
+    <script src="js/data-mapper/pages/nearby-attractions-mapper.js"></script>
+
+    <!-- Preview Handler for Admin Integration -->
+    <script src="js/preview-handler.js"></script>
+
+    <!-- Header and Footer Loader -->
+    <script src="js/header-footer-loader.js"></script>
+
+    <!-- Page-specific script -->
+    <script src="js/pages/nearby-attractions.js"></script>
+
 </body>
 </html>

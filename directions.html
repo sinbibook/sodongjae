@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:,">
     <title>거제 소동재 스파 펜션 - 오시는길</title>
+    <meta name="description" content="오션·포레스트 뷰 객실에서 월풀스파부터 테라스 바베큐·불멍, 아침을 여는 조식까지 머무는 순간이 쉼이 되는 거제 소동재 스파 펜션입니다.">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/directions.css">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./styles/theme.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/quote-section.css">
-    <link rel="stylesheet" href="./styles/directions.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap">
   <!-- Open Graph Meta Tags for Social Media -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="거제 소동재 스파 펜션 - 오시는길" />
@@ -35,89 +26,107 @@
   <meta name="google-site-verification" content="75whl7G5hS4Ps0MzWyKga4TLlqMANRJ3dBc5JIWjZ6Y" />
 </head>
 <body>
-    <div class="direction">
-      <!-- header.html include -->
-      <div id="header-container"></div>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
 
-      <main class="content">
-        <section class="con-2">
-          <div class="bg2">
-            <!-- CUSTOM FIELD: 오시는길 메인 소개 섹션 이미지 매핑 (동적생성) -->
-            <div class="bg-slides" data-directions-images>
-              <!-- 동적 생성 (directions-mapper.js) -->
+    <!-- 메인 소개 섹션 히어로 0번째 이미지-->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="" alt="오시는길 배경" data-customfield-directions-hero-image-0>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-center">
+                <h1 class="hero-title" data-directions-hero-title>LOCATION</h1>
             </div>
-            <div class="bg-child">
-              <div class="address-container-parent">
-                <div class="address-container">
-                  <div class="direction-info">
-                    <!-- 하드코딩, 매핑x -->
-                    <h2 class="direction2">Direction</h2>
-                  </div>
-                  <div class="direction-divider"></div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="hero-scroll-down" onclick="scrollToNextSection()">
+            <svg class="scroll-arrow" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Location Info Section -->
+    <section class="location-info-section">
+        <div class="directions-content-container">
+        <!-- Facility Introduction Section -->
+        <div class="facility-intro-section">
+            <div class="facility-intro-content">
+                <div class="facility-label">
+                    <span class="facility-number" data-directions-title>LOCATION</span>
                 </div>
-                <div class="arrow-container">
-                  <div class="arrow2">
-                    <img class="arrow-child2 arrow-prev" role="button" tabindex="0" aria-label="이전 슬라이드" loading="lazy" alt="" src="./public/Rectangle-37.svg" />
-                    <h3 class="h36 arrow-num-current">01</h3>
-                    <div class="arrow-child3"></div>
-                    <h3 class="h36 arrow-num-total">00</h3>
-                    <img class="arrow-child4 arrow-next" role="button" tabindex="0" aria-label="다음 슬라이드" loading="lazy" alt="" src="./public/Rectangle-37.svg" />
-                  </div>
-                </div>
-              </div>
+                <p class="facility-description" data-directions-description>
+                    오시는 길 안내입니다.
+                </p>
             </div>
-          </div>
+        </div>
+
+        <!-- Banner Image Section 히어로 1번째 이미지 -->
+        <div class="directions-banner-section">
+            <div class="container">
+                <img src="" alt="오시는길 배너" class="directions-banner-image" data-customfield-directions-hero-image-1>
+            </div>
+        </div>
+
+        <!-- 지도 섹션 -->
+        <section class="map-section main-content-fade-in">
+            <div class="container">
+                <div class="address-section">
+                    <p>
+                        <svg class="location-icon" viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span data-directions-address></span>
+                    </p>
+                    <!-- 안내사항  -->
+                     <div class="notice-wrap" data-directions-notice-section>
+                        <h4 data-customfield-directions-notice-title>안내사항</h4>
+                        <p data-customfield-directions-notice-description>안내사항 1</p>
+                     </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="map-container">
+                    <div id="kakao-map"></div>
+                </div>
+            </div>
         </section>
-      </main>
-
-      <section class="location-info-wrapper">
-        <div class="location-info">
-          <div class="details-container">
-            <!-- 하드코딩, 매핑x -->
-            <h2 class="direction3">Direction</h2>
-            <!-- 숙소 주소 매핑 -->
-            <div class="address-details">
-              <h3 class="h38" data-directions-address></h3>
-            </div>
-          </div>
-          <div class="map-container">
-            <div class="img1">
-              <!-- kakao map : property.latitude, property.longitude 매핑 -->
-              <div id="kakao-map" style="width:100%;height:100%"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CUSTOM FIELD : index closing 섹션 데이터 재사용 -->
-      <section class="quote-section" data-closing-section>
-        <img class="quote-bg" loading="lazy" alt="" src="" />
-        <div class="quote-content">
-          <b class="quote-title" data-closing-title></b>
-          <b class="quote-body" data-closing-description></b>
-        </div>
-      </section>
-
-      <!-- footer.html include -->
-      <div id="footer-container"></div>
-    </div>
+        </div> <!-- directions-content-container -->
 
     <!-- Kakao Map SDK -->
-    <script type="text/javascript" src="./js/kakao-maps-sdk.js"></script>
+    <script type="text/javascript" src="js/kakao-maps-sdk.js"></script>
 
-    <!-- Scripts -->
-    <script src="./js/common.js"></script>
-    <script src="./js/common/scroll-reveal.js"></script>
-    <script src="./js/pages/directions.js"></script>
+    <!-- Include ImageWithFallback script -->
+    <script src="js/image-with-fallback.js"></script>
 
-    <!-- Data Mapper -->
-    <script src="./js/image-helpers.js"></script>
-    <script src="./js/data-mapper/core/base-mapper.js"></script>
-    <script src="./js/data-mapper/pages/header-footer-mapper.js"></script>
-    <script src="./js/data-mapper/pages/directions-mapper.js"></script>
-    <script src="./js/preview-handler.js"></script>
+    <!-- Common JavaScript -->
+    <script src="js/common.js"></script>
 
-    <!-- Header / Footer Loader -->
-    <script src="./js/header-footer-loader.js"></script>
+    <!-- Image Helpers -->
+    <script src="js/image-helpers.js"></script>
+
+    <!-- Base Data Mapper -->
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+
+    <!-- Directions Page Mapper -->
+    <script src="js/data-mapper/pages/directions-mapper.js"></script>
+
+    <!-- Preview Handler for Admin Integration -->
+    <script src="js/preview-handler.js"></script>
+
+    <!-- Header Footer Mapper -->
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+
+    <!-- Header and Footer Loader -->
+    <script src="js/header-footer-loader.js"></script>
+
+    <!-- Page-specific script -->
+    <script src="js/pages/directions.js"></script>
+
 </body>
 </html>
