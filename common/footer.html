@@ -1,0 +1,61 @@
+<footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-nav">
+        <div class="footer-nav-tab">
+          <!-- 하드코딩, 매핑x -->
+          <h3 class="footer-nav-item">Prologue</h3>
+          <div class="footer-col">
+            <a class="footer-col-item" href="./main.html">외부풍경</a>
+            <a class="footer-col-item" href="./directions.html">오시는길</a>
+            <!-- 주변 관광지 / 숙소 배치도: enabled 시 header-footer-mapper.js가 동적 추가 -->
+          </div>
+        </div>
+        <div class="footer-nav-tab">
+          <!-- 하드코딩, 매핑x -->
+          <h3 class="footer-nav-item">Rooms</h3>
+          <div class="footer-col" data-rooms-list>
+            <!-- 동적 생성 (header-footer-mapper.js) -->
+          </div>
+        </div>
+        <div class="footer-nav-tab">
+          <!-- 하드코딩, 매핑x -->
+          <h3 class="footer-nav-item">Specials</h3>
+          <div class="footer-col" data-facilities-list>
+            <!-- 동적 생성 (header-footer-mapper.js) -->
+          </div>
+        </div>
+        <div class="footer-nav-tab">
+          <!-- 하드코딩, 매핑x -->
+          <h3 class="footer-nav-item">Reservation</h3>
+          <div class="footer-col">
+            <a class="footer-col-item" href="./reservation.html">예약안내</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <a href="./index.html" class="footer-logo-link" aria-label="홈으로">
+          <img class="footer-logo" data-footer-logo loading="lazy" alt="" src="" />
+        </a>
+        <!-- data-* 속성 : data-footer-rural-stay-mark-wrap (customFields.footer.ruralStayMarks (최대 두 장, 단일 ruralStayMark 호환)가 있을 때만 노출, 기본 숨김)
+             data-footer-rural-stay-mark : 농어촌민박사업자 이미지 (표시마크 + 신고번호, alt = description) -->
+        <div class="footer-rural-stay-mark-wrap" data-footer-rural-stay-mark-wrap style="display: none;">
+          <img class="footer-rural-stay-mark" src="" alt="농어촌민박사업자" data-footer-rural-stay-mark />
+            <img class="footer-rural-stay-mark" src="" alt="농어촌민박사업자" data-footer-rural-stay-mark />
+        </div>
+        <a href="#" target="_blank" rel="noopener noreferrer" data-footer-calendar-link style="display: none;">실시간 달력</a>
+        <div class="footer-contact">
+          <div class="footer-contact-detail">
+            <b class="footer-phone" data-footer-phone></b>
+            <b class="footer-address">
+              <span data-footer-address></span><br />
+              <span data-footer-business-number></span>
+              <span data-footer-representative-name></span><br />
+              <span data-footer-ecommerce></span>
+            </b>
+          </div>
+          <!-- 저작권 문구는 블라인드 처리, 영역은 하단 여백 용도로 유지 -->
+          <b class="footer-copyright" data-footer-copyright style="display: none;"></b>
+        </div>
+      </div>
+    </div>
+  </footer>
