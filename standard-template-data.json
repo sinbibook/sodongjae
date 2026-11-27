@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.51.0",
-    "generatedAt": "2026-11-27T07:34:52.218133470Z",
+    "version": "1.52.0",
+    "generatedAt": "2026-11-27T08:02:41.917931721Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "01a1e37b-3b49-7a19-8ec7-0d8efda91bea",
     "homepageId": "01a21aea-cc08-73d8-8e35-d4b75e64fa13"
@@ -383,8 +383,8 @@
         "displayOrder": 8,
         "images": [
           {
-            "id": "01a21be5-f243-76c5-a47f-daf3b90919a4",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/01a1ede3-8940-72c6-a656-d440c8f8d4fb/main/1795764383992-z8bbca9tav.jpg",
+            "id": "01a21be5-f2da-7fde-8d8e-b54e0ab66085",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/01a1ede3-8940-72c6-a656-d440c8f8d4fb/main/1795764383993-0k2thzuzq1.jpg",
             "sortOrder": 0,
             "description": "",
             "isSelected": true,
@@ -399,8 +399,8 @@
             "blockId": null
           },
           {
-            "id": "01a21be5-f2da-7fde-8d8e-b54e0ab66085",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/01a1ede3-8940-72c6-a656-d440c8f8d4fb/main/1795764383993-0k2thzuzq1.jpg",
+            "id": "01a21be5-f243-76c5-a47f-daf3b90919a4",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/01a1ede3-8940-72c6-a656-d440c8f8d4fb/main/1795764383992-z8bbca9tav.jpg",
             "sortOrder": 2,
             "description": "",
             "isSelected": true,
@@ -525,7 +525,7 @@
           {
             "id": "01a21b0e-808a-7a74-bbbd-b644c0f5cf50",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/mvbdekKTqtso.jpg",
-            "sortOrder": 1,
+            "sortOrder": 0,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -535,7 +535,7 @@
           {
             "id": "01a21b0e-808a-7ff2-b229-cdf9b70d3860",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/XfdyI5xOFUQv.jpg",
-            "sortOrder": 2,
+            "sortOrder": 0,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -543,7 +543,7 @@
           {
             "id": "01a21b0e-808b-7fd2-8c23-b089375e1dd9",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/2SidmuAN3Rrc.jpg",
-            "sortOrder": 3,
+            "sortOrder": 1,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -551,7 +551,7 @@
           {
             "id": "01a21b0e-808c-71a0-b77d-1348014b85e5",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/10GFKJbP2dUl.jpg",
-            "sortOrder": 4,
+            "sortOrder": 2,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -559,7 +559,7 @@
           {
             "id": "01a21b0e-808c-722a-90ec-a51f731670b8",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/5VBeUE1N36To.jpg",
-            "sortOrder": 5,
+            "sortOrder": 3,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -567,7 +567,7 @@
           {
             "id": "01a21b0e-808c-72b7-a5d1-0ae2ba942616",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/jihBxM1Ky7bu.jpg",
-            "sortOrder": 6,
+            "sortOrder": 4,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -575,7 +575,7 @@
           {
             "id": "01a21b0e-808c-730f-91a3-a6b8ad040db0",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/VfCWduyKn642.jpg",
-            "sortOrder": 7,
+            "sortOrder": 5,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -583,7 +583,7 @@
           {
             "id": "01a21b0e-808c-73cd-b389-ad31dbabb49c",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/Xu3lqbsN6TLv.jpg",
-            "sortOrder": 8,
+            "sortOrder": 6,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -591,7 +591,7 @@
           {
             "id": "01a21b0e-808c-7422-bd1f-76891825b267",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/FCuAUWzhJ72o.jpg",
-            "sortOrder": 9,
+            "sortOrder": 7,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -599,7 +599,7 @@
           {
             "id": "01a21b0e-808c-746a-afd5-40284bcb3ef8",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/26qfkxLw7tOU.jpg",
-            "sortOrder": 10,
+            "sortOrder": 8,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -607,7 +607,7 @@
           {
             "id": "01a21b0e-808c-74c8-8790-d6b57aca5917",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/OqRJEeSsT3Aa.jpg",
-            "sortOrder": 11,
+            "sortOrder": 9,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -615,7 +615,7 @@
           {
             "id": "01a21b0e-808c-7510-8bce-e43b3c4d1a4e",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/Zmdes0FySCGp.jpg",
-            "sortOrder": 12,
+            "sortOrder": 10,
             "description": "",
             "isSelected": true,
             "blockId": null
@@ -623,7 +623,7 @@
           {
             "id": "01a21b0e-808c-755d-aaab-67eddb522aa1",
             "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/11/27/fiovgFnmN7R2.jpg",
-            "sortOrder": 13,
+            "sortOrder": 11,
             "description": "",
             "isSelected": true,
             "blockId": null
