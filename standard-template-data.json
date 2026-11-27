@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.17.0",
-    "generatedAt": "2026-11-27T03:49:02.516847257Z",
+    "version": "1.18.0",
+    "generatedAt": "2026-11-27T03:51:10.325387860Z",
     "templateType": "fullpage_mood",
     "propertyId": "01a1e37b-3b49-7a19-8ec7-0d8efda91bea",
     "homepageId": "01a21aea-cc08-73d8-8e35-d4b75e64fa13"
@@ -1847,7 +1847,7 @@
           "sections": [
             {
               "hero": {
-                "title": "",
+                "title": "숲과 바다 사이, 느긋한 하루를 보내는 곳 ",
                 "images": [
                   {
                     "id": "01a21aef-6463-7253-862e-e63a254ea132",
