@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.39.0",
-    "generatedAt": "2026-11-27T05:54:57.793180416Z",
+    "version": "1.40.0",
+    "generatedAt": "2026-11-27T06:00:07.485770358Z",
     "templateType": "full_banner_slider_flat",
     "propertyId": "01a1e37b-3b49-7a19-8ec7-0d8efda91bea",
     "homepageId": "01a21aea-cc08-73d8-8e35-d4b75e64fa13"
@@ -1847,7 +1847,7 @@
           "sections": [
             {
               "hero": {
-                "title": "숲과 바다 사이, 여유로운 하루를 보내는 시간",
+                "title": "",
                 "images": [
                   {
                     "id": "01a21aef-6463-7253-862e-e63a254ea132",
@@ -2053,7 +2053,7 @@
                     "id": "01a21b7e-b957-75b5-8822-e6900d3c4132",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a21aea-cc08-73d8-8e35-d4b75e64fa13/index_signature/1795757618425-7i79b8174w.jpg",
                     "sortOrder": 0,
-                    "description": "",
+                    "description": "숲과 바다 사이, 여유로운 하루를 보내는 시간",
                     "isSelected": true,
                     "blockId": null
                   }
