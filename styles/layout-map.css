@@ -2,193 +2,286 @@
    Layout Map Page Styles
    =========================== */
 
-/* Content Wrapper - bg-icon 배경 */
-.layout-map-content-wrapper {
+/* ===========================
+   Hero Section
+   =========================== */
+.hero-section {
+    height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
-.layout-map-content-wrapper .bg-icon {
-    z-index: 0 !important;
-    pointer-events: none;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: 1309px !important;
-    height: 2080px !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: cover !important;
-    object-position: left top !important;
-    mask-image: linear-gradient(to bottom, black 60%, transparent 100%) !important;
-}
-
-.layout-map-content-wrapper .layout-section {
-    position: relative;
-    z-index: 1;
-    padding-bottom: 50px;
-}
-
-/* Hero Section - 화살표 정중앙 정렬 */
-.layout-map-page .address-container-parent {
-    align-items: center !important;
-}
-
-/* Layout Section */
-.layout-map-page .layout-section {
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 100px 20px;
+    height: 100%;
+    z-index: 1;
 }
 
-.layout-map-page .layout-section-inner {
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===========================
+   Main Container
+   =========================== */
+
+.layout-map-container {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 100px 40px;
+}
+
+/* ===========================
+   Intro Section
+   =========================== */
+
+.layout-map-intro {
+    text-align: center;
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.layout-map-intro.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.layout-map-title {
+    font-family: var(--font-ko-main);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: var(--color-secondary);
+    letter-spacing: -0.5px;
+}
+
+.layout-map-description {
+    font-family: var(--font-ko-sub);
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   Layout Map Content
+   =========================== */
+
+.layout-map-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.layout-map-page .layout-section-title {
-    margin: 0;
-    font-family: var(--font-italiana);
-    font-size: clamp(36px, 6vw, 56px);
-    font-weight: 400;
-    color: #333;
-    letter-spacing: 0.03em;
-    line-height: 1.2;
-}
+/* ===========================
+   Layout Map Item
+   =========================== */
 
-.layout-map-page .layout-section-desc {
-    margin: 0;
-    font-family: var(--font-ko-sub);
-    font-size: 17px;
-    font-weight: 400;
-    color: #555;
-    line-height: 1.8;
-    letter-spacing: -0.01em;
-    max-width: 900px;
-}
-
-/* Image Grid */
-.layout-map-page .layout-images-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
-    margin-top: 20px;
-}
-
-.layout-map-page .layout-image-item {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.layout-map-item {
+    width: 100%;
     opacity: 0;
-    transform: translateY(120px) scale(0.94);
-    transition: opacity 1.4s var(--ease-elegant), transform 1.4s var(--ease-elegant);
-    will-change: opacity, transform;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
 }
 
-.layout-map-page .layout-image-item.is-in-view {
+.layout-map-item.animate {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
 }
 
-.layout-map-page .layout-image-item img {
+.layout-map-image {
     width: 100%;
     height: auto;
-    max-height: none;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
-    border-radius: 4px;
+    border-radius: 12px;
+    min-height: 100%;
 }
 
-.layout-map-page .layout-image-caption {
-    margin: 0;
+/* ===========================
+   Layout Map Description Item
+   =========================== */
+
+.layout-map-description-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.layout-map-description-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.layout-map-description-item p {
     font-family: var(--font-ko-sub);
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 1rem;
     color: #666;
-    line-height: 1.6;
-    letter-spacing: -0.01em;
-    text-align: left;
-    padding: 24px 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.layout-map-page .layout-image-caption:empty {
-    display: none;
+    margin: 0;
+    line-height: 1.8;
+    font-weight: 400;
 }
 
 /* ===========================
    Responsive Design
    =========================== */
 
-@media screen and (max-width: 1000px) {
-    .layout-map-page .layout-section {
-        padding: 80px 20px;
+@media (max-width: 1200px) {
+    .layout-map-container {
+        max-width: 100%;
+        padding: 80px 40px;
     }
 
-    .layout-map-page .layout-section-inner {
-        gap: 32px;
-    }
-
-    .layout-map-page .layout-images-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 24px;
-    }
-
-    .layout-map-page .layout-section-title {
-        font-size: 42px;
+    .layout-map-title {
+        font-size: 2.2rem;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .layout-map-page .layout-section {
-        padding: 60px 20px;
+@media (max-width: 768px) {
+    .layout-map-container {
+        max-width: 100%;
+        padding: 60px 25px;
     }
 
-    .layout-map-page .layout-images-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
+    .layout-map-intro {
+        margin-bottom: 60px;
     }
 
-    .layout-map-page .layout-section-title {
-        font-size: 32px;
+    .layout-map-title {
+        font-size: 1.8rem;
     }
 
-    .layout-map-page .layout-section-desc {
-        font-size: 15px;
+    .layout-map-description {
+        font-size: 1rem;
     }
 
-    .layout-map-page .layout-image-caption {
-        font-size: 14px;
+    .layout-map-content {
+        gap: 50px;
+    }
+
+    .layout-map-image-description {
+        font-size: 0.95rem;
     }
 }
 
-@media screen and (max-width: 450px) {
-    .layout-map-page .layout-section {
-        padding: 40px 16px;
+@media (max-width: 480px) {
+    .layout-map-container {
+        padding: 40px 15px;
     }
 
-    .layout-map-page .layout-section-inner {
-        gap: 24px;
+    .layout-map-intro {
+        margin-bottom: 40px;
     }
 
-    .layout-map-page .layout-images-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
+    .layout-map-title {
+        font-size: 1.5rem;
     }
 
-    .layout-map-page .layout-section-title {
-        font-size: 24px;
+    .layout-map-description {
+        font-size: 0.95rem;
     }
 
-    .layout-map-page .layout-section-desc {
-        font-size: 14px;
+    .layout-map-content {
+        gap: 40px;
     }
 
-    .layout-map-page .layout-image-caption {
-        font-size: 13px;
+    .layout-map-image-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===========================
+   Closing Banner Section
+   =========================== */
+
+.layout-closing {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-closing-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Desktop 전용 parallax (모바일에선 background-attachment: fixed가 깨지므로 데스크톱에서만 적용) */
+@media (min-width: 769px) {
+    .layout-closing-bg {
+        background-attachment: fixed;
+    }
+}
+
+.layout-closing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.layout-closing-content {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-closing-content .closing-logo {
+    width: 200px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-width: 200px;
+    z-index: 100 !important;
+    position: relative !important;
+    display: block !important;
+    margin: 0 auto !important;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: logoFadeIn 1.5s ease-out 1s forwards;
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
